@@ -1,0 +1,43 @@
+*,
+**::before,
+**::after {
+  box-sizing: border-box;
+}
+
+/*Core Styles --------->*/
+body {
+  margin:0;
+  padding: 0;
+}
+
+.flexUl {
+  display: flex;
+  justify-content: flex-end;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.white {
+  color: #fff;
+}
+
+/*Header -----> */
+.header {
+  padding-left: 8%;
+  padding-right: 8%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3e3c3c;
+}
+
+nav ul li {
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+
