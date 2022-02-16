@@ -1,10 +1,13 @@
+
+/*Core Styles --------->*/
 *,
 **::before,
 **::after {
   box-sizing: border-box;
 }
 
-/*Core Styles --------->*/
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
 body {
   margin:0;
   padding: 0;
@@ -12,7 +15,6 @@ body {
 
 .flexUl {
   display: flex;
-  justify-content: flex-end;
 }
 li {
   list-style: none;
@@ -21,6 +23,12 @@ li {
 a {
   text-decoration: none;
 }
+
+p {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
 .white {
   color: #fff;
 }
@@ -40,4 +48,67 @@ nav ul li {
   cursor: pointer;
 }
 
+#headline-img {
+  width: 1001.81px;
+  height: 768.48px;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  background-color: #1C1A19;
+}
 
+h1 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 81px;
+  color: #ff6b00;
+}
+
+.intro-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+}
+
+.intro-text {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  padding-left: 6%;
+  padding-right: 38%;
+}
+
+section ul li {
+  margin-top: 15px;
+}
+
+.icons {
+  font-size: 20px;
+  font-weight: bold;
+  --fa-animation-duration: 4s;
+  --fa-bounce-rebound: 1;
+  margin-top: 15px;
+}
+
+.iconshvr:hover {
+  color: rgb(124, 148, 151);
+  transition: all 0.3s linear;
+}
+
+.work-header {
+  display: flex;
+}
+
+#line {
+  height: 1px;
+}
