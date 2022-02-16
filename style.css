@@ -33,6 +33,20 @@ p {
   color: #fff;
 }
 
+.btn {
+  background-color: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 12px;
+  border: 0;
+  margin-top: 10px;
+  width: 200px;
+  float: left;
+}
+
 /*Header -----> */
 .header {
   padding-left: 8%;
@@ -43,14 +57,14 @@ p {
   background-color: #3e3c3c;
 }
 
-nav ul li {
-  margin-left: 40px;
+.cursor {
+  margin-right: 40px;
   cursor: pointer;
 }
 
 #headline-img {
-  width: 1001.81px;
-  height: 768.48px;
+  width: 30%;
+  height: 70%;
 }
 .intro {
   display: flex;
@@ -111,4 +125,101 @@ section ul li {
 
 #line {
   height: 1px;
+}
+
+/*Works -----> */
+.works {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.works-title {
+  font-family: 'Crete Round',sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091E42;
+}
+
+.works-title:after {
+  content:"";
+  display: block;
+  height: 1px;
+  position: absolute;
+  background: #212121;
+  right: 8%;
+  width: 68%;
+  margin-top: -20px;
+}
+
+.works-intro {
+  display: flex;
+  gap: 150px;
+  margin-top: 8%;
+}
+
+#yogaPng {
+  width: 684px;
+  height: 448px;
+}
+
+.works-text {
+  color: #091E42;
+  font-size: 20px;
+  line-height: 28px;
+}
+.works-ul {
+  padding-left: 0;
+}
+.works-tabs {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  border: 1px solid #8993a4;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.works-projects {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  padding: 16px;
+  background-image: linear-gradient(10deg, rgba(82, 79, 79, 0) 0.75%, rgba(90, 89, 89, 0.9) 84.18%), url(images/workbg.png);
+  background-position: center;
+  background-size: cover;
+  padding-top: 40%;
+}
+
+.project-titles {
+  font-family: Crete Round;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color:#fff;
+}
+
+.project-ul {
+  display: flex;
+  gap: 15px;
+}
+.Tags {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.24);
 }
