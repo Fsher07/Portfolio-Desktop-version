@@ -88,13 +88,6 @@ p {
   height: 70%;
 }
 
-@media (max-width: 1100px) {
-  #headline-img {
-    width: 40%;
-    right: 0;
-  }
-}
-
 .intro {
   display: flex;
   align-items: center;
@@ -404,4 +397,28 @@ section ul li {
   transition: all 0.3s linear;
   margin-right: 2.5px;
   margin-left: 2.5px;
+}
+
+@media all and (max-width: 1100px) {
+  h1 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .works-title, .intro-title, .project-titles {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  p, .works-text {
+    font-size: 11px;
+    line-height: 20px;
+  }
+ 
+  #yogaPng {
+    width: 50%;
+  }
+  .project-ul {
+    padding-left: 0;
+  }
 }
