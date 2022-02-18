@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
 
 body {
   margin: 0;
@@ -27,7 +27,7 @@ a {
 p {
   display: flex;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   flex-wrap: wrap;
 }
 
@@ -40,7 +40,7 @@ p {
   justify-content: center;
   background-color: #ff6b00;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 17px;
@@ -80,6 +80,20 @@ p {
   flex-shrink: 0.5;
 }
 
+.fa-envelope:hover {
+  animation: spin 2s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .cursor {
   margin-right: 40px;
   cursor: pointer;
@@ -98,7 +112,7 @@ p {
 }
 
 h1 {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
@@ -107,7 +121,7 @@ h1 {
 }
 
 .intro-title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -169,7 +183,7 @@ section ul li {
 }
 
 .works-title {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-size: 40px;
   line-height: 52px;
   color: #091e42;
@@ -198,7 +212,7 @@ section ul li {
 }
 
 .works-tabs {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -251,7 +265,7 @@ section ul li {
 }
 
 .project-titles {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -265,7 +279,7 @@ section ul li {
 }
 
 .Tags {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -288,7 +302,7 @@ section ul li {
 
 .Aboutme-title,
 h1 {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
@@ -329,7 +343,7 @@ h1 {
 }
 
 .AboutmeTab {
-  font-family: 'InaiMathi', sans-serif;
+  font-family: "InaiMathi", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -350,7 +364,7 @@ h1 {
 
 .lang-tabs {
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
