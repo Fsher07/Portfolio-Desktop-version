@@ -80,13 +80,32 @@ p {
   flex-shrink: 0.5;
 }
 
+.fa-envelope:hover {
+  animation: spin 2s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.headline-ul,
+#menu {
+  display: none;
+}
+
 .cursor {
   margin-right: 40px;
   cursor: pointer;
 }
 
 #headline-img {
-  width: 100%;
+  width: 40%;
   height: 100%;
 }
 
@@ -124,6 +143,7 @@ h1 {
   display: flex;
   flex-direction: column;
   padding: 15% 20% 15% 6%;
+  width: 60%;
 }
 
 section ul li {
@@ -182,6 +202,10 @@ section ul li {
   margin-top: 8%;
 }
 
+.img-yoga {
+  display: none;
+}
+
 #yogaPng {
   width: 684px;
   height: 448px;
@@ -214,6 +238,11 @@ section ul li {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+
+.project-ul-1,
+.none-btn {
+  display: none;
 }
 
 .card {
@@ -364,7 +393,7 @@ h1 {
 }
 
 .form-title {
-  width: 40%;
+  width: 60%;
 }
 
 .namebox {
@@ -379,7 +408,7 @@ h1 {
 }
 
 .info-boxes {
-  width: 100%;
+  width: calc(100% - 20rem);
 }
 
 #textA {
@@ -410,7 +439,7 @@ h1 {
   margin-left: 2.5px;
 }
 
-@media all and (max-width: 1100px) {
+@media (min-width: 992px) and (max-width: 1050px) {
   h1 {
     font-size: 36px;
     line-height: 45px;
