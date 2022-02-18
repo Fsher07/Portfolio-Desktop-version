@@ -1,0 +1,431 @@
+/* Core Styles ---------> */
+*,
+**::before,
+**::after {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+body {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+p {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+}
+
+.btn {
+  background-color: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 12px;
+  border: 0;
+  margin-top: 10px;
+  width: 45%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:active {
+  background-color: #ff6b00;
+  color: #fff;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  transform: translateY(4px);
+}
+
+.btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+a {
+  text-decoration: none;
+}
+
+.white {
+  color: #fff;
+}
+
+/* Works section -----------> */
+.works-mobile {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  background: #3c3a39;
+  padding-top: 4%;
+  height: 100%;
+}
+
+.intro-ul,
+#headline-img,
+#desktop-nav {
+  display: none;
+}
+
+.name {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+.menu {
+  margin-right: -60px;
+  width: 18px;
+  height: 12px;
+  margin-bottom: 20px;
+}
+
+.fa-bars {
+  color: #fff;
+  font-size: 18px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: #1c1a19;
+  padding: 5%;
+  background-image: url("images/illustration.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+  flex-basis: 100%;
+  margin-bottom: 20%;
+}
+
+h1 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  color: #ff6b00;
+}
+
+.intro-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.Aboutme-title {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  color: #ff6b00;
+}
+
+.headline-ul {
+  justify-content: flex-start;
+  gap: 25px;
+  padding-left: 20px;
+  margin-bottom: 30%;
+}
+
+.icons {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+
+  --fa-animation-duration: 4s;
+  --fa-bounce-rebound: 1;
+}
+
+/* My Recent Works Page ---------> */
+.MyRWorks {
+  display: flex;
+  flex-direction: column;
+}
+
+.works-title {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  padding-bottom: 5%;
+  color: #1c1a19;
+  margin-bottom: 10%;
+}
+
+#lineMRW {
+  border-bottom: 1px solid #212121;
+}
+
+.img-yoga {
+  margin-top: 10%;
+}
+
+.liner,
+.list-img,
+#yogaPng {
+  display: none;
+}
+
+.works-info {
+  padding-left: 8%;
+}
+
+#MRWorks-h2 {
+  color: #091e42;
+  font-family: 'Crete Round', serif;
+  text-align: left;
+  border: none;
+  margin-top: 1%;
+}
+
+.MRWorks-p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  text-align: left;
+}
+
+.works-ul {
+  justify-content: flex-start;
+  gap: 30px;
+  margin-left: -40px;
+}
+
+.works-ul li {
+  border: 1px solid #8993a4;
+  padding: 5px;
+}
+
+.MRWTabs {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+}
+
+/* Project Pages ---------> */
+.works-projects {
+  margin-top: 25%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.ProjectPage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("images/workbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 25px;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.ProjectPage-h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.project-ul-1,
+.project-ul {
+  text-align: left;
+  gap: 30px;
+  margin-left: -45px;
+}
+
+.project-ul-1 li {
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.24);
+  order: 0;
+  flex-grow: 0;
+}
+
+.project-ul li {
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.24);
+  order: 0;
+  flex-grow: 0;
+}
+
+.Tags {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+}
+
+.ProjectPage .btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  box-sizing: unset;
+  margin-left: -20px;
+}
+
+#aboutPic {
+  display: none;
+}
+
+.AboutMe {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: #1c1a19;
+  padding: 10% 5% 5% 5%;
+  background-image: url("images/seconillu.png");
+  background-position: right 30rem;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.AboutMe-btn {
+  width: 50%;
+}
+
+.AboutMe-list {
+  border-top: 1px solid #fff;
+  margin-top: 25rem;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.AboutMe-list li {
+  margin-top: 20%;
+  text-decoration: none;
+  color: #fff;
+}
+
+#language {
+  list-style-image: url("images/rectangle.png");
+}
+
+#frameworks {
+  list-style-image: url("images/rectangle2.png");
+}
+
+#skills {
+  list-style-image: url("images/circle.png");
+}
+
+.AboutmeTab {
+  font-family: 'InaiMathi', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.lang-list {
+  flex-direction: column;
+  align-items: center;
+  margin-left: -40px;
+}
+
+.lang-tabs {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+}
+
+/* Contact Me Page ---------> */
+#contact-form {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.iconsContact {
+  font-size: 24px;
+  color: #505f79;
+}
+
+.contact-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  padding: 7rem 10px 3rem 10px;
+}
+
+.info-boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.namebox {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #dbd8d7;
+  padding-bottom: 10px;
+  margin-bottom: 7%;
+}
+
+#textA {
+  border: none;
+  background-color: #fbf8f7;
+  padding: 10px;
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-ul {
+  margin-top: 5rem;
+  border-top: 1px solid #dfe1e6;
+  padding: 2rem 10px;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
