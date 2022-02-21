@@ -3,6 +3,7 @@
 # Portfolio: Desktop Version
 
 > Creating a portfolio website.
+> Deploying portfolio web page.
 
 ## Built With
 
