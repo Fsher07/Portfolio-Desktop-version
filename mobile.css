@@ -89,7 +89,16 @@ a {
   text-align: left;
 }
 
-.menu {
+.nav-menu {
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.hamburger-menu {
   margin-right: -60px;
   width: 18px;
   height: 12px;
@@ -99,6 +108,10 @@ a {
 .fa-bars {
   color: #fff;
   font-size: 18px;
+}
+
+#closeIcon {
+  display: none;
 }
 
 .headline {
