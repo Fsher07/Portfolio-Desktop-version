@@ -69,6 +69,10 @@ a {
   align-items: center;
 }
 
+.popup-window {
+  display: none;
+}
+
 .header {
   display: flex;
   justify-content: space-around;

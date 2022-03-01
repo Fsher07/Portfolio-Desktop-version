@@ -35,6 +35,10 @@ p {
   color: #fff;
 }
 
+.blue {
+  color: #091e42;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -50,7 +54,7 @@ p {
   width: 200px;
 }
 
-.btn:active {
+.btn:onClick {
   background-color: #ff6b00;
   color: #fff;
   box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
@@ -188,11 +192,62 @@ section ul li {
   padding-right: 8%;
 }
 
+/* Popup project window */
+.popup-window {
+  top: 0;
+  left: 20%;
+  bottom: 0;
+  right: 0;
+  padding: 10%;
+  width: 1200px;
+  max-width: 80%;
+  z-index: 10;
+  position: fixed;
+  transform: scale(0);
+}
+
+.popup-window.active {
+  transform: scale(1);
+}
+
+.popup-window-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-window ul {
+  margin-top: -20px;
+  margin-bottom: 5%;
+}
+
+.popup-window-content {
+  display: flex;
+  gap: 3rem;
+}
+
+.popup-window-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popup-window-text button {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-window-text p {
+  line-height: 30px;
+  margin-top: 0;
+}
+
+/* Project Cards */
 .works-title {
   font-family: 'Crete Round', sans-serif;
   font-size: 40px;
   line-height: 52px;
-  color: #091e42;
   margin-right: 30px;
 }
 
@@ -212,7 +267,6 @@ section ul li {
 }
 
 .works-text {
-  color: #091e42;
   font-size: 20px;
   line-height: 28px;
 }
@@ -227,7 +281,6 @@ section ul li {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #091e42;
   border: 1px solid #8993a4;
   padding: 5px;
   margin-right: 15px;

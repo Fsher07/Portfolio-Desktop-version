@@ -18,6 +18,7 @@
      <nav class="desktop-nav">
       <ul class="nav-menu flexUl">
        <li><a class="navbarItem white cursor" href="#">Portfolio</a></li>
+       <hr>
        <li><a class="navbarItem white cursor" href="#">About</a></li>
        <li><a class="navbarItem white cursor" href="#contact-form">Contact</a></li>
        <li><a href="#"><i id="envelope" class="fa-regular fa-envelope white"></i></a></li>
@@ -99,58 +100,60 @@
   <section class="works">
     <!-- Popup Project Window -->
     <div class="popup-window">
-      <i id="closeIcon" class="fa-solid fa-xmark"></i>
-      <h2>Keeping track of hundreds  of components website</h2>
-      <ul class="works-ul flexUl ">
+      <div class="popup-window-header">
+        <h2 class="blue">Keeping track of hundreds  of components website</h2>
+        <nav><i class="fa-solid fa-xmark project-closeIcon"></i></nav>
+      </div>
+      <ul class="works-ul flexUl">
         <li>
-          <a class="works-tabs MRWTabs" href="#">html</a>
+          <a class="works-tabs MRWTabs blue" href="#">html</a>
         </li>
         <li>
-          <a class="works-tabs MRWTabs" href="#">Bootstrap</a>
+          <a class="works-tabs MRWTabs blue" href="#">Bootstrap</a>
         </li>
         <li>
-          <a class="works-tabs MRWTabs" href="#">Ruby on rails</a>
+          <a class="works-tabs MRWTabs blue" href="#">Ruby on rails</a>
         </li>
       </ul>
       <div class="popup-window-content">
         <img src="images/portfolioPng.png" alt="project-image">
           <div class="popup-window-text">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.</p>
+            <p class="blue">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.</p>
             <div class="popup-window-buttons">
-              <button>See Live<img src="images/projectbuttonImage.png" alt="button-image"></button>
-              <button>See Project<i class="fab fa-github fa-flip"></i></button>
+              <button class="btn project-open-button">See Live<img src="images/projectbuttonImage.png" alt="button-image"></button>
+              <button class="btn project-open-button">See Project<img src="images/githubPng.png" alt="button-github-symbol"></i></button>
             </div>
           </div>
       </div>
     </div>
     <!-- Project Cards -->
     <div class="works-header">
-      <h2><span class="works-title" id="lineMRW">My Recent Works</span></h2>
+      <h2><span class="works-title blue" id="lineMRW">My Recent Works</span></h2>
       <div class="liner"></div>
       <img class="img-yoga" src="images/yoga.png" alt="yoga">
     </div>
    <div class="works-intro">
     <img id="yogaPng" src="images/yoga.png" alt="yoga">
     <div class="works-info">
-      <h2 class="works-title" id="MRWorks-h2">Multi-Post Stories</h2>
-      <p class="works-text MRWorks-p">A daily selection of privately personalized reads; no accounts or sign-ups required.
+      <h2 class="works-title blue" id="MRWorks-h2">Multi-Post Stories</h2>
+      <p class="works-text MRWorks-p blue">A daily selection of privately personalized reads; no accounts or sign-ups required.
          has been the industry's standard dummy text ever since the 1500s,
           when an unknown printer took a standard dummy text.<br>
       <ul class="works-ul flexUl ">
         <li>
-          <a class="works-tabs MRWTabs" href="#">css</a>
+          <a class="works-tabs MRWTabs blue" href="#">css</a>
         </li>
         <li>
-          <a class="works-tabs MRWTabs" href="#">html</a>
+          <a class="works-tabs MRWTabs blue" href="#">html</a>
         </li>
         <li>
-          <a class="works-tabs MRWTabs" href="#">bootstrap</a>
+          <a class="works-tabs MRWTabs blue" href="#">bootstrap</a>
         </li>
         <li>
-          <a class="works-tabs MRWTabs" href="#">Ruby</a>
+          <a class="works-tabs MRWTabs blue" href="#">Ruby</a>
         </li>
       </ul>
-      <button type="button" class="btn">See Project</button>
+      <button type="submit" class="btn project-open-button">See Project</button>
     </div>
    </div>
    <div class="works-projects">
@@ -333,7 +336,7 @@
     </ul>
   </section>
   <form id="contact-form" action="https://formspree.io/f/xdobgedl" method="POST">
-   <div class="works-title form-title contact-title">I'm always interested in hearing about new projects,
+   <div class="works-title form-title contact-title blue">I'm always interested in hearing about new projects,
     so if you'd like to chat please get in touch.</div>
     <div class="info-boxes">
     <input class="namebox" type="text" id="name" name="user_name" placeholder="  Full name" maxlength="30" required/>
@@ -373,6 +376,7 @@
     </li>                
   </ul>
  </section>
- <script src="script.js"></script> 
+ <script src="script.js"></script>
+ div. 
 </body>
 </html>
