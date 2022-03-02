@@ -103,11 +103,11 @@ a {
 }
 
 .navbarItem {
-  color: #FFF5E1;
+  color: #fff5e1;
   font-weight: bold;
   padding-left: 10%;
   font-family: 'Inter', sans-serif;
-  border-bottom: 1px solid #6F6C6B;
+  border-bottom: 1px solid #6f6c6b;
   font-size: 32px;
   line-height: 44px;
   padding-bottom: 10%;
@@ -136,11 +136,6 @@ a {
 .fa-bars {
   color: #fff;
   font-size: 18px;
-}
-
-#closeIcon {
-  color: #fff;
-  display: none;
 }
 
 .headline {
@@ -475,6 +470,8 @@ h1 {
 #closeIcon {
   margin-top: 20px;
   font-size: 1.2em;
+  color: #fff;
+  display: none;
 }
 
 .underline-li {
