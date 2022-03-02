@@ -89,6 +89,42 @@ a {
   text-align: left;
 }
 
+.desktop-nav {
+  position: fixed;
+  display: none;
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #3c3a39;
+  padding-top: 4rem;
+}
+
+.navbarItem {
+  color: #fff5e1;
+  font-weight: bold;
+  padding-left: 10%;
+  font-family: 'Inter', sans-serif;
+  border-bottom: 1px solid #6f6c6b;
+  font-size: 32px;
+  line-height: 44px;
+  padding-bottom: 10%;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding-left: 10%;
+}
+
+.openMenu {
+  display: block;
+}
+
 #hamburgerMenu {
   margin-right: -60px;
   width: auto;
@@ -100,11 +136,6 @@ a {
 .fa-bars {
   color: #fff;
   font-size: 18px;
-}
-
-#closeIcon {
-  color: #fff;
-  display: none;
 }
 
 .headline {
@@ -436,3 +467,21 @@ h1 {
   align-items: center;
 }
 
+#closeIcon {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #fff;
+  display: none;
+}
+
+.underline-li {
+  display: flex;
+  width: 90%;
+}
+
+.cursor {
+  width: 100%;
+  padding-bottom: 5px;
+  padding-left: 18px;
+  text-align: left;
+}

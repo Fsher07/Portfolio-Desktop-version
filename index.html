@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Desktop Version</title>
   <link rel="stylesheet" type="text/css" media="screen and (max-width: 992px)" href=" ./mobile.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 992px)" href="./desktop.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 992px)" href="./desktop.css" />
   <script src="https://kit.fontawesome.com/686039ca8a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,17 +14,18 @@
   <header class="header">
     <div class="name white">Furkan Salim Hıdır</div>
     <div class="navbar">
-     <nav id="desktop-nav">
-      <ul class="flexUl">
-       <li><a class="white cursor" href="#">Portfolio</a></li>
-       <li><a class="white cursor" href="#">About</a></li>
-       <li><a class="white cursor" href="#">Contact</a></li>
-       <li><a href="#"><i class="fa-regular fa-envelope white"></i></a></li>
+     <nav class="desktop-nav">
+      <ul class="nav-menu flexUl">
+       <li class="underline-li"><a class="navbarItem white cursor" href="#">Portfolio</a></li>
+       <li class="underline-li"><a class="navbarItem white cursor" href="#">About</a></li>
+       <li class="underline-li"><a class="navbarItem white cursor" href="#contact-form">Contact</a></li>
+       <li><a href="#"><i id="envelope" class="fa-regular fa-envelope white"></i></a></li>
       </ul>
      </nav>
-     <nav id="menu">
-      <i class="fa-solid fa-bars"></i>
-    </nav>   
+     <nav id="hamburgerMenu">
+      <i id="menuIcon" class="fa-solid fa-bars"></i>
+      <i id="closeIcon" class="fa-solid fa-xmark"></i>
+     </nav>  
     </div>
   </header>
   <section class="intro">
@@ -341,6 +342,7 @@
     </a>
     </li>                
   </ul>
- </section> 
+ </section>
+ <script src="script.js"></script> 
 </body>
 </html>
