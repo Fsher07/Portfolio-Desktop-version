@@ -57,7 +57,7 @@ const projectWindows = [
     document.querySelector('.popup-window').appendChild(ProjectWindowHeader);
 
     let Xmark = document.createElement('nav');
-    Xmark.innerHTML = '<i class="fa-solid fa-xmark project-closeIcon"></i>';
+    Xmark.innerHTML = '<i class="fa-solid blue fa-xmark fa-2x project-closeIcon"></i>';
     document.querySelector('.popup-window-header').appendChild(Xmark);
 
     // creating technology list

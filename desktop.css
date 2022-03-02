@@ -208,14 +208,9 @@ section ul li {
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
 }
 
-.openWindow {
-  transform: scale(1);
+.fa-xmark {
+  scale: 1.5;
 }
-
-.closeWindow {
-  transform: scale(0);
-}
-
 
 .popup-window-header {
   display: flex;
