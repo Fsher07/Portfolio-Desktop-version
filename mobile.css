@@ -471,3 +471,20 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
+#closeIcon {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.underline-li {
+  display: flex;
+  width: 90%;
+}
+
+.cursor {
+  width: 100%;
+  padding-bottom: 5px;
+  padding-left: 18px;
+  text-align: left;
+}
