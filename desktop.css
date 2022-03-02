@@ -208,6 +208,15 @@ section ul li {
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
 }
 
+.openWindow {
+  transform: scale(1);
+}
+
+.closeWindow {
+  transform: scale(0);
+}
+
+
 .popup-window-header {
   display: flex;
   justify-content: space-between;
@@ -237,6 +246,16 @@ section ul li {
 .popup-window-text p {
   line-height: 30px;
   margin-top: 0;
+}
+
+#overlay {
+  position: fixed;
+  background: rgba(0,0,0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
 }
 
 /* Project Cards */

@@ -37,10 +37,15 @@ const projectWindows = [
   }]
 
   const openButton = document.querySelector('.project-open-button');
-  const closeButton = document.querySelector('.project-closeIcon');
   
-
   function popupProjectWindow() {
+
+    // creating overlay
+    const overlay = document.createElement('div');
+    overlay.id = 'overlay';
+    document.body.appendChild(overlay);
+
+    //creating container of window
     let ProjectWindow = document.createElement('div');
     ProjectWindow.className= 'popup-window';
     document.body.appendChild(ProjectWindow);
@@ -90,18 +95,25 @@ const projectWindows = [
     // creating description button part
     let button = document.createElement('div');
     button.className = 'popup-window-buttons';
-    button.innerHTML = '<button class="btn project-open-button">See Project<img src="images/githubPng.png" alt="button-github-symbol"></i></button>';
+    button.innerHTML = '<button class="btn project-open-button">See Project <img src="images/githubPng.png" alt="button-github-symbol"></i></button>';
     document.querySelector('.popup-window-text').appendChild(button);
 
     let button1 = document.createElement('button');
     button1.className = 'btn project-open-button';
-    button1.innerHTML = 'See Live<img src="images/projectbuttonImage.png" alt="button-image">';
+    button1.innerHTML = 'See Live <img src="images/projectbuttonImage.png" alt="button-image">';
     document.querySelector('.popup-window-buttons').appendChild(button1);
+
+    function closeProjectWindow() {
+      if(document.querySelector('.popup-window')) {
+        document.querySelector('.popup-window').remove();
+        document.querySelector('#overlay').remove();
+      }
+    }
+    
+    const closeButton = document.querySelector('.project-closeIcon');
+    closeButton.addEventListener("click", closeProjectWindow);
   }
 
   openButton.addEventListener("click", popupProjectWindow);
-  // closeButton.addEventListener("click", function() {
 
-
-
-
+  
