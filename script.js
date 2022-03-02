@@ -36,7 +36,7 @@ const projectWindows = [
     sourceLink: '#',
   }]
 
-  const openButton = document.querySelector('.project-open-button');
+  const openButton = document.querySelectorAll('.project-open-button');
   
   function popupProjectWindow() {
 
@@ -53,11 +53,12 @@ const projectWindows = [
     //creating header
     let ProjectWindowHeader = document.createElement('div');
     ProjectWindowHeader.className='popup-window-header';
-    ProjectWindowHeader.innerHTML = '<h2 class="blue">'+projectWindows[0].title+'</h2>';
+    ProjectWindowHeader.innerHTML = '<h2 class="popup-title blue">'+projectWindows[0].title+'</h2>';
     document.querySelector('.popup-window').appendChild(ProjectWindowHeader);
 
     let Xmark = document.createElement('nav');
-    Xmark.innerHTML = '<i class="fa-solid blue fa-xmark fa-2x project-closeIcon"></i>';
+    Xmark.className = 'popup-window-closeMark';
+    Xmark.innerHTML = '<i class="fa-solid blue fa-xmark project-closeIcon"></i>';
     document.querySelector('.popup-window-header').appendChild(Xmark);
 
     // creating technology list
@@ -69,21 +70,21 @@ const projectWindows = [
     // adding li tags
     const techMenu = document.querySelector('#technologies-List');
     let li = document.createElement('li');
-    li.innerHTML ='<a class="works-tabs MRWTabs blue" href="#">'+projectWindows[0].technologies.split(' ')[0]+'</a>';
+    li.innerHTML ='<a class="popup-tabs works-tabs MRWTabs blue" href="#">'+projectWindows[0].technologies.split(' ')[0]+'</a>';
     techMenu.appendChild(li);
 
     li = document.createElement('li');
-    li.innerHTML = '<a class="works-tabs MRWTabs blue" href="#">'+projectWindows[0].technologies.split(' ')[1]+'</a>';
+    li.innerHTML = '<a class="popup-tabs works-tabs MRWTabs blue" href="#">'+projectWindows[0].technologies.split(' ')[1]+'</a>';
     techMenu.appendChild(li);
 
     li = document.createElement('li');
-    li.innerHTML = '<a class="works-tabs MRWTabs blue" href="#">'+projectWindows[0].technologies.split(' ')[2]+'</a>';
+    li.innerHTML = '<a class="popup-tabs works-tabs MRWTabs blue" href="#">'+projectWindows[0].technologies.split(' ')[2]+'</a>';
     techMenu.appendChild(li);
 
     // creating content part
     let content = document.createElement('div');
     content.className = 'popup-window-content';
-    content.innerHTML = '<img src="'+projectWindows[0].image+'" alt="project-image">';
+    content.innerHTML = '<img class="popup-image" src="'+projectWindows[0].image+'" alt="project-image">';
     document.querySelector('.popup-window').appendChild(content);
 
     // creating description part
@@ -95,11 +96,11 @@ const projectWindows = [
     // creating description button part
     let button = document.createElement('div');
     button.className = 'popup-window-buttons';
-    button.innerHTML = '<button class="btn project-open-button">See Project <img src="images/githubPng.png" alt="button-github-symbol"></i></button>';
+    button.innerHTML = '<button class="btn popup-button">See Project <img src="images/githubPng.png" alt="button-github-symbol"></i></button>';
     document.querySelector('.popup-window-text').appendChild(button);
 
     let button1 = document.createElement('button');
-    button1.className = 'btn project-open-button';
+    button1.className = 'btn popup-button';
     button1.innerHTML = 'See Live <img src="images/projectbuttonImage.png" alt="button-image">';
     document.querySelector('.popup-window-buttons').appendChild(button1);
 
@@ -111,9 +112,10 @@ const projectWindows = [
     }
     
     const closeButton = document.querySelector('.project-closeIcon');
-    closeButton.addEventListener("click", closeProjectWindow);
+    closeButton.addEventListener('click', closeProjectWindow);
   }
 
-  openButton.addEventListener("click", popupProjectWindow);
+  openButton.forEach(button => {
+    button.addEventListener('click', popupProjectWindow)});
 
   

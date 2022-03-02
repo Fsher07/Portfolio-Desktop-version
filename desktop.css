@@ -198,24 +198,28 @@ section ul li {
   left: 30%;
   bottom: 0;
   right: 0;
-  padding: 3rem;
-  width: 1200px;
-  height: min-content;
   max-width: 80%;
+  width: 1200px;
+  padding: 3rem;
   z-index: 10;
+  height: min-content;
   position: fixed;
   background: #fff;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
 }
 
 .fa-xmark {
-  scale: 1.5;
+  font-size: 2em;
 }
 
 .popup-window-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.popup-window-header h2 {
+  justify-content: flex-start;
 }
 
 .popup-window ul {
@@ -225,6 +229,11 @@ section ul li {
 .popup-window-content {
   display: flex;
   gap: 3rem;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
 }
 
 .popup-window-text {
@@ -569,3 +578,4 @@ h1 {
     width: 100px;
   }
 }
+
