@@ -84,6 +84,22 @@ p {
   flex-shrink: 0.5;
 }
 
+.name {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.cursor {
+  font-family: 'Inter' sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
 .fa-envelope:hover {
   animation: spin 2s;
 }
