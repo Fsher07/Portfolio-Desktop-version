@@ -77,9 +77,9 @@ a {
   height: 100%;
 }
 
+#envelope,
 .intro-ul,
-#headline-img,
-#desktop-nav {
+#headline-img {
   display: none;
 }
 
@@ -89,16 +89,22 @@ a {
   text-align: left;
 }
 
-.menu {
+#hamburgerMenu {
   margin-right: -60px;
-  width: 18px;
-  height: 12px;
+  width: auto;
   margin-bottom: 20px;
+  position: absolute;
+  z-index: 100;
 }
 
 .fa-bars {
   color: #fff;
   font-size: 18px;
+}
+
+#closeIcon {
+  color: #fff;
+  display: none;
 }
 
 .headline {
@@ -429,19 +435,4 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-
-#closeIcon { 
-  margin-top: 20px; 
-  font-size: 1.2em; 
-} 
-.underline-li { 
-  display: flex; 
-  width: 90%; 
-} 
-
-.cursor { width: 100%;
-   padding-bottom: 5px; 
-   padding-left: 18px;
-    text-align: left; 
-}   
 
