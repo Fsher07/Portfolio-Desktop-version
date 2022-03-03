@@ -220,6 +220,7 @@ h1 {
   background: #fff;
   height: min-content;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  overflow: hidden;
 }
 
 #technologies-List {
@@ -247,7 +248,9 @@ h1 {
 }
 
 .popup-button {
-  font-size: small;
+  font-size: 15px;
+  margin-top: 0;
+  padding: 6px;
 }
 
 .popup-window-closeMark {

@@ -36,7 +36,7 @@ const projectWindows = [
     sourceLink: '#',
   }]
 
-  const openButton = document.querySelectorAll('.project-open-button');
+const openButton = document.querySelectorAll('.project-open-button');
   
   function popupProjectWindow() {
 
@@ -118,4 +118,19 @@ const projectWindows = [
   openButton.forEach(button => {
     button.addEventListener('click', popupProjectWindow)});
 
-  
+// Client side validation
+const form = document.getElementById('contact-form');
+const email = document.getElementById('email');
+const regex = /[^A-Za-z0-9]/g; // to remove all non-alphanumeric characters
+const submit = document.getElementById('submit-btn');
+const errorDiv = document.getElementById('error');
+
+  submit.addEventListener ("click", function (event) {
+    var emailAddress = email.value.replace(regex, '');
+    if (emailAddress === emailAddress.toLowerCase()) {
+      email.setCustomValidity("");
+    } else {
+      event.preventDefault();
+    }
+  });
+

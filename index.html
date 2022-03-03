@@ -306,7 +306,7 @@
       </li>
     </ul>
   </section>
-  <form id="contact-form" action="https://formspree.io/f/xdobgedl" method="POST">
+  <form id="contact-form" action="https://formspree.io/f/xdobgedl" method="post">
    <div class="works-title form-title contact-title blue">I'm always interested in hearing about new projects,
     so if you'd like to chat please get in touch.</div>
     <div class="info-boxes">
@@ -315,7 +315,8 @@
     <textarea name="comment" id="textA" cols="30" rows="10" maxlength="500"
      placeholder="Enter text here" required></textarea>
     <div class="contact-btn">
-    <button type="submit" class="btn">Get in touch</button> 
+    <button id="submit-btn" type="submit" class="btn">Get in touch</button>
+    <div id="error"></div>
     </div>
    </div>
   </form>
