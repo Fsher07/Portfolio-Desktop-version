@@ -207,16 +207,15 @@ section ul li {
 
 /* Popup project window */
 .popup-window {
-  display: flex;
-  flex-direction: column;
-  top: 20%;
-  left: 20%;
-  bottom: 20%;
-  right: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
   max-width: 80%;
-  width: 1000px;
+  width: 1200px;
   padding: 3rem;
   z-index: 10;
+  overflow: hidden;
   height: fit-content;
   position: fixed;
   background: #fff;
@@ -259,7 +258,7 @@ section ul li {
 
 .popup-window-buttons {
   display: flex;
-  gap: 30px;
+  gap: 5px;
 }
 
 .popup-window-text p {
