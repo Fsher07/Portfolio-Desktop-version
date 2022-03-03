@@ -73,7 +73,6 @@ a {
   align-items: center;
 }
 
-
 .header {
   display: flex;
   justify-content: space-around;
@@ -108,11 +107,11 @@ a {
 }
 
 .navbarItem {
-  color: #FFF5E1;
+  color: #fff5e1;
   font-weight: bold;
   padding-left: 10%;
   font-family: 'Inter', sans-serif;
-  border-bottom: 1px solid #6F6C6B;
+  border-bottom: 1px solid #6f6c6b;
   font-size: 32px;
   line-height: 44px;
   padding-bottom: 10%;
@@ -213,7 +212,7 @@ h1 {
   flex-direction: column;
 }
 
-/*Popup project window */
+/* Popup project window */
 .popup-window {
   margin: 7% 3% auto 3%;
   top: 0;
@@ -225,16 +224,12 @@ h1 {
   position: fixed;
   background: #fff;
   height: min-content;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 }
 
 #technologies-List {
   height: min-content;
   gap: 10px;
-}
-
-.fa-xmark {
-  scale: 1.5;
 }
 
 .popup-image {
@@ -266,7 +261,7 @@ h1 {
   right: 0;
 }
 
-.fa-xmark{
+.fa-xmark {
   font-size: 1em;
 }
 
@@ -295,7 +290,7 @@ h1 {
 
 #overlay {
   position: fixed;
-  background: rgba(0,0,0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   top: 0;
   left: 0;
   right: 0;
@@ -303,7 +298,7 @@ h1 {
   pointer-events: none;
 }
 
-/*Project Cards */
+/* Project Cards */
 
 .works-title {
   font-family: 'Crete Round', sans-serif;

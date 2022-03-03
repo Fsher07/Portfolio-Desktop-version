@@ -54,7 +54,7 @@ p {
   width: 200px;
 }
 
-.btn:onClick {
+.btn:active {
   background-color: #ff6b00;
   color: #fff;
   box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
@@ -92,14 +92,6 @@ p {
   line-height: 20px;
 }
 
-.cursor {
-  font-family: 'Inter' sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-}
-
 .fa-envelope:hover {
   animation: spin 2s;
 }
@@ -122,6 +114,11 @@ p {
 .cursor {
   margin-right: 40px;
   cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 #headline-img {
@@ -221,7 +218,7 @@ section ul li {
   height: min-content;
   position: fixed;
   background: #fff;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 }
 
 .fa-xmark {
@@ -270,7 +267,7 @@ section ul li {
 
 #overlay {
   position: fixed;
-  background: rgba(0,0,0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   top: 0;
   left: 0;
   right: 0;
@@ -594,4 +591,3 @@ h1 {
     width: 100px;
   }
 }
-
