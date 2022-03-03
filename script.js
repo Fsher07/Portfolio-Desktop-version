@@ -33,6 +33,54 @@ const projectWindows = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     liveLink: '#',
     sourceLink: '#',
+  },
+  {
+    title: 'Data Dashboard Healthcare',
+    technologies: 'Bootstrap html Google',
+    image: 'images/portfolioPng.png',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industrys standard',
+    liveLink: '#',
+    sourceLink: '#',
+  },
+  {
+    title: 'Data Dashboard Healthcare',
+    technologies: 'Bootstrap html Google',
+    image: 'images/portfolioPng.png',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industrys standard',
+    liveLink: '#',
+    sourceLink: '#',
+  },
+  {
+    title: 'Data Dashboard Healthcare',
+    technologies: 'Bootstrap html Google',
+    image: 'images/portfolioPng.png',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industrys standard',
+    liveLink: '#',
+    sourceLink: '#',
+  },
+  {
+    title: 'Data Dashboard Healthcare',
+    technologies: 'Bootstrap html Google',
+    image: 'images/portfolioPng.png',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industrys standard',
+    liveLink: '#',
+    sourceLink: '#',
+  },
+  {
+    title: 'Data Dashboard Healthcare',
+    technologies: 'Bootstrap html Google',
+    image: 'images/portfolioPng.png',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industrys standard',
+    liveLink: '#',
+    sourceLink: '#',
+  },
+  {
+    title: 'Data Dashboard Healthcare',
+    technologies: 'Bootstrap html Google',
+    image: 'images/portfolioPng.png',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industrys standard',
+    liveLink: '#',
+    sourceLink: '#',
   }];
 
 const openButton = document.querySelectorAll('.project-open-button');
@@ -113,3 +161,29 @@ function popupProjectWindow() {
 openButton.forEach((button) => {
   button.addEventListener('click', popupProjectWindow);
 });
+
+function projectCard1() { // project card 1 is created seperately because it is different from the other 5 cards
+  return `<div class="card card1 ProjectPage">
+  <button type="button" class="projectbtn btn project-open-button">`  
+}
+
+function projectCardContent(info) {
+  return `<div class="card ProjectPage-h2">
+  <h3 class="project-titles ProjectPage-h2">${info.title}</h3>
+  <p>${info.description}</p>
+  <ul class="project-ul">
+    <li><a class="Tags" href="#">${info.technologies.split(' ')[0]}</a></li>
+    <li><a class="Tags" href="#">${info.technologies.split(' ')[1]}</a></li>
+    <li><a class="Tags" href="#">${info.technologies.split(' ')[2]}</a></li>
+  </ul>
+</div>`;
+}
+
+const projectCardsContainer = document.querySelector('.works-projects');
+if (projectCardsContainer) {
+  projectCard1();
+  for (let i = 2; i < projectWindows.length; i++) {
+    projectCardsContainer.innerHTML += projectCardContent(projectWindows[i]);
+  }
+}  
+
