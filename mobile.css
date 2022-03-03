@@ -142,11 +142,6 @@ a {
   font-size: 18px;
 }
 
-#closeIcon {
-  color: #fff;
-  display: none;
-}
-
 .headline {
   display: flex;
   flex-direction: column;
@@ -566,4 +561,23 @@ h1 {
 
 .popup-tabs {
   font-size: 14px;
+}
+
+#closeIcon {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #fff;
+  display: none;
+}
+
+.underline-li {
+  display: flex;
+  width: 90%;
+}
+
+.cursor {
+  width: 100%;
+  padding-bottom: 5px;
+  padding-left: 18px;
+  text-align: left;
 }
