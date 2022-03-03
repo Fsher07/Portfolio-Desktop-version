@@ -126,6 +126,6 @@ submit.addEventListener('click', (event) => {
     email.setCustomValidity('');
   } else {
     event.preventDefault();
-    errorDiv.innerHTML = 'E-mail address must contain only lower cases ' + '<i class="fa-solid fa-circle-exclamation"></i>';
+    errorDiv.innerHTML = 'E-mail address must contain only lower cases <i class="fa-solid fa-circle-exclamation"></i>';
   }
 });
