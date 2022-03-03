@@ -207,15 +207,17 @@ section ul li {
 
 /* Popup project window */
 .popup-window {
+  display: flex;
+  flex-direction: column;
   top: 20%;
-  left: 25%;
-  bottom: 0;
-  right: 0;
+  left: 20%;
+  bottom: 20%;
+  right: 20%;
   max-width: 80%;
-  width: 1200px;
+  width: 1000px;
   padding: 3rem;
   z-index: 10;
-  height: min-content;
+  height: fit-content;
   position: fixed;
   background: #fff;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
