@@ -25,6 +25,7 @@ navbarItems.forEach((navbarItems) => {
 });
 
 // Popup desktop project window
+const width = window.innerWidth;
 const projectWindows = [
   {
     title: 'Keeping track of hundreds  of components website',
@@ -38,9 +39,12 @@ const projectWindows = [
     title: 'Data Dashboard Healthcare',
     technologies: 'Bootstrap html Google',
     image: 'images/placeholder.png',
+    imageMobile: 'images/workbg.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industrys standard',
     liveLink: '#',
     sourceLink: '#',
+    displayNoneDesktop: 'none-btn',
+    displayOnMobile: '',
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -86,8 +90,18 @@ const projectWindows = [
 // project card 1 is created seperately because it is different from the other 5 cards
 function projectCard1() {
   return `<div class="card card1 ProjectPage" style="background-image: url('${projectWindows[1].image}');">
-  <button type="button" class="projectbtn btn project-open-button">See Project</button>`;
+  <h3 class="project-titles ProjectPage-h2 ${width > 992 ? projectWindows[1].displayNoneDesktop : projectWindows[1].displayOnMobile}">${projectWindows[1].title}</h3>
+  <p class=" ${width > 992 ? projectWindows[1].displayNoneDesktop : projectWindows[1].displayOnMobile}">${projectWindows[1].description}</p>
+  <ul class="project-ul ${width > 992 ? projectWindows[1].displayNoneDesktop : projectWindows[1].displayOnMobile}">
+    <li><a class="Tags" href="#">${projectWindows[1].technologies.split(' ')[0]}</a></li>
+    <li><a class="Tags" href="#">${projectWindows[1].technologies.split(' ')[1]}</a></li>
+    <li><a class="Tags" href="#">${projectWindows[1].technologies.split(' ')[2]}</a></li>
+  </ul>
+  <button type="button" class="projectbtn btn project-open-button">See Project</button>
+  </div>`;
 }
+
+window.onresize = projectCard1();
 
 // other project cards
 function projectCardContent(info) {

@@ -584,3 +584,7 @@ h1 {
   padding-left: 18px;
   text-align: left;
 }
+
+.card1 {
+  background-image: url('images/workbg.png');
+}
