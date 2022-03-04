@@ -12,7 +12,16 @@
 
 ## Live Demo
 
-[Personal Portfolio Website Link](https://Fsher07.github.io/)
+[Ckeckout The live Site here](https://Fsher07.github.io/)
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+-to run the project locally, clone the project using the commands and link below:
+
+-git clone https://github.com/Fsher07/Fsher07.github.io.git
+-cd Fsher07.github.io
 
 ## Authors
 
