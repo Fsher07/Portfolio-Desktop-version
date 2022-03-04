@@ -585,3 +585,20 @@ h1 {
   padding-left: 18px;
   text-align: left;
 }
+
+.card1 {
+  background-image: url('images/workbg.png');
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#error {
+  color: #505f79;
+  font-size: 20px;
+  background: rgba(228, 236, 238, 0.8);
+  padding: 5px;
+}

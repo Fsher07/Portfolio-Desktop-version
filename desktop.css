@@ -346,18 +346,6 @@ section ul li {
   padding-right: 0;
 }
 
-.card2 {
-  background-image: url(images/card2.png);
-}
-
-.card3 {
-  background-image: url(images/card3.png);
-}
-
-.card5 {
-  background-image: url(images/card5.png);
-}
-
 .projectbtn {
   width: 100%;
   justify-content: center;
@@ -375,6 +363,11 @@ section ul li {
 .project-ul {
   display: flex;
   gap: 15px;
+}
+
+.project-ul-1,
+.none-btn {
+  display: none;
 }
 
 .Tags {
