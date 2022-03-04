@@ -326,8 +326,7 @@ section ul li {
   gap: 20px;
 }
 
-.project-ul-1,
-.none-btn {
+.project-ul-1 {
   display: none;
 }
 
@@ -341,6 +340,7 @@ section ul li {
 .card1 {
   display: flex;
   align-items: flex-end;
+  background-image: url('images/placeholder.png');
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -534,6 +534,10 @@ h1 {
   font-size: 20px;
   background: rgba(228, 236, 238, 0.8);
   padding: 5px;
+}
+
+.none-btn {
+  display: none;
 }
 
 @media (min-width: 992px) and (max-width: 1050px) {
