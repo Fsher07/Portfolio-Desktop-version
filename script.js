@@ -33,6 +33,103 @@ const projectWindows = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     liveLink: '#',
     sourceLink: '#',
+
+  }];
+
+const openButton = document.querySelectorAll('.project-open-button');
+function popupProjectWindow() {
+  // creating overlay
+  const overlay = document.createElement('div');
+  overlay.id = 'overlay';
+  document.body.appendChild(overlay);
+
+  //  creating container of window
+  const ProjectWindow = document.createElement('div');
+  ProjectWindow.className = 'popup-window';
+  document.body.appendChild(ProjectWindow);
+  //  creating header
+  const ProjectWindowHeader = document.createElement('div');
+  ProjectWindowHeader.className = 'popup-window-header';
+  ProjectWindowHeader.innerHTML = `<h2 class="popup-title blue"> ${projectWindows[0].title}</h2>`;
+  document.querySelector('.popup-window').appendChild(ProjectWindowHeader);
+
+  const Xmark = document.createElement('nav');
+  Xmark.className = 'popup-window-closeMark';
+  Xmark.innerHTML = '<i class="fa-solid blue fa-xmark project-closeIcon"></i>';
+  document.querySelector('.popup-window-header').appendChild(Xmark);
+
+  // creating technology list
+  const technologiesList = document.createElement('ul');
+  technologiesList.className = 'works-ul flexUl';
+  technologiesList.id = 'technologies-List';
+  document.querySelector('.popup-window').appendChild(technologiesList);
+
+  // adding li tags
+  const techMenu = document.querySelector('#technologies-List');
+  let li = document.createElement('li');
+  li.innerHTML = `<a class="popup-tabs works-tabs MRWTabs blue" href="#"> ${projectWindows[0].technologies.split(' ')[0]}</a>`;
+  techMenu.appendChild(li);
+
+  li = document.createElement('li');
+  li.innerHTML = `<a class="popup-tabs works-tabs MRWTabs blue" href="#"> ${projectWindows[0].technologies.split(' ')[1]}'</a>`;
+  techMenu.appendChild(li);
+
+  li = document.createElement('li');
+  li.innerHTML = `<a class="popup-tabs works-tabs MRWTabs blue" href="#"> ${projectWindows[0].technologies.split(' ')[2]}</a>`;
+  techMenu.appendChild(li);
+
+  // creating content part
+  const content = document.createElement('div');
+  content.className = 'popup-window-content';
+  content.innerHTML = `<img class="popup-image" src=" ${projectWindows[0].image}" alt="project-image">`;
+  document.querySelector('.popup-window').appendChild(content);
+
+  // creating description part
+  const description = document.createElement('div');
+  description.className = 'popup-window-text';
+  description.innerHTML = `<p class="blue"> ${projectWindows[0].description}</p>`;
+  document.querySelector('.popup-window-content').appendChild(description);
+
+  // creating description button part
+  const button = document.createElement('div');
+  button.className = 'popup-window-buttons';
+  button.innerHTML = '<button class="btn popup-button">See Project <img src="images/githubPng.png" alt="button-github-symbol"></i></button>';
+  document.querySelector('.popup-window-text').appendChild(button);
+
+  const button1 = document.createElement('button');
+  button1.className = 'btn popup-button';
+  button1.innerHTML = 'See Live <img src="images/projectbuttonImage.png" alt="button-image">';
+  document.querySelector('.popup-window-buttons').appendChild(button1);
+
+  function closeProjectWindow() {
+    if (document.querySelector('.popup-window')) {
+      document.querySelector('.popup-window').remove();
+      document.querySelector('#overlay').remove();
+    }
+  }
+  const closeButton = document.querySelector('.project-closeIcon');
+  closeButton.addEventListener('click', closeProjectWindow);
+}
+
+openButton.forEach((button) => {
+  button.addEventListener('click', popupProjectWindow);
+});
+
+// Client side validation
+const email = document.getElementById('email');
+const regex = /[^A-Za-z0-9]/g; // to remove all non-alphanumeric characters
+const submit = document.getElementById('submit-btn');
+const errorDiv = document.getElementById('error');
+
+submit.addEventListener('click', (event) => {
+  const emailAddress = email.value.replace(regex, '');
+  if (emailAddress === emailAddress.toLowerCase()) {
+    email.setCustomValidity('');
+  } else {
+    event.preventDefault();
+    errorDiv.innerHTML = 'E-mail address must contain only lower cases <i class="fa-solid fa-circle-exclamation"></i>';
+  }
+=======
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -188,4 +285,5 @@ function popupProjectWindow() {
 
 openButton.forEach((button) => {
   button.addEventListener('click', popupProjectWindow);
+
 });
