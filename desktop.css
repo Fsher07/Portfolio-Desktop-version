@@ -207,15 +207,16 @@ section ul li {
 
 /* Popup project window */
 .popup-window {
-  top: 20%;
-  left: 25%;
-  bottom: 0;
-  right: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
   max-width: 80%;
   width: 1200px;
   padding: 3rem;
   z-index: 10;
-  height: min-content;
+  overflow: hidden;
+  height: auto;
   position: fixed;
   background: #fff;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -257,7 +258,7 @@ section ul li {
 
 .popup-window-buttons {
   display: flex;
-  gap: 30px;
+  gap: 5px;
 }
 
 .popup-window-text p {
@@ -331,7 +332,6 @@ section ul li {
 }
 
 .card {
-  background-image: url(images/workbg.png);
   background-repeat: no-repeat;
   padding: 50% 16px 16px 16px;
   background-position: center;
@@ -340,7 +340,6 @@ section ul li {
 
 .card1 {
   display: flex;
-  background-image: url(images/placeholder.png);
   align-items: flex-end;
   padding-bottom: 0;
   padding-left: 0;
