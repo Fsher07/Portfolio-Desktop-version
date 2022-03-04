@@ -548,12 +548,6 @@ h1 {
   padding: 10px;
 }
 
-.contact-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .contact-ul {
   margin-top: 5rem;
   border-top: 1px solid #dfe1e6;
@@ -592,6 +586,7 @@ h1 {
 
 .contact-btn {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 30px;
 }

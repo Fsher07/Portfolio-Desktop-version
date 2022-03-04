@@ -102,8 +102,6 @@ function projectCard1() {
   </div>`;
 }
 
-window.onresize = projectCard1();
-
 // other project cards
 function projectCardContent(info) {
   return `<div class="card ProjectPage" style="background-image: url('${info.image}');">
@@ -245,4 +243,3 @@ function preFilled() {
   });
 }
 preFilled();
-
