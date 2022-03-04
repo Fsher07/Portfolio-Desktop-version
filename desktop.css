@@ -326,11 +326,6 @@ section ul li {
   gap: 20px;
 }
 
-.project-ul-1,
-.none-btn {
-  display: none;
-}
-
 .card {
   background-repeat: no-repeat;
   padding: 50% 16px 16px 16px;
@@ -344,18 +339,7 @@ section ul li {
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
-}
-
-.card2 {
-  background-image: url(images/card2.png);
-}
-
-.card3 {
-  background-image: url(images/card3.png);
-}
-
-.card5 {
-  background-image: url(images/card5.png);
+  background-image: url('images/placeholder.png');
 }
 
 .projectbtn {
@@ -375,6 +359,11 @@ section ul li {
 .project-ul {
   display: flex;
   gap: 15px;
+}
+
+.project-ul-1,
+.none-btn {
+  display: none;
 }
 
 .Tags {
