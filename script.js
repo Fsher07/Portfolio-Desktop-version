@@ -238,3 +238,11 @@ function saveValuesObj() {
 fullName.onchange = saveValuesObj;
 textArea.onchange = saveValuesObj;
 email.onchange = saveValuesObj;
+
+function preFilled() {
+  datas.forEach((data) => {
+    data.value = JSON.parse(localStorage.getItem('data'))[`${data.id}`];
+  });
+}
+preFilled();
+
