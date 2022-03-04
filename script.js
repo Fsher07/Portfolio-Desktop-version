@@ -203,3 +203,19 @@ function popupProjectWindow() {
 openButton.forEach((button) => {
   button.addEventListener('click', popupProjectWindow);
 });
+
+// Client side validation
+const email = document.getElementById('email');
+const regex = /[^A-Za-z0-9]/g; // to remove all non-alphanumeric characters
+const submit = document.getElementById('submit-btn');
+const errorDiv = document.getElementById('error');
+
+submit.addEventListener('click', (event) => {
+  const emailAddress = email.value.replace(regex, '');
+  if (emailAddress === emailAddress.toLowerCase()) {
+    email.setCustomValidity('');
+  } else {
+    event.preventDefault();
+    errorDiv.innerHTML = 'E-mail address must contain only lower cases <i class="fa-solid fa-circle-exclamation"></i>';
+  }
+});
