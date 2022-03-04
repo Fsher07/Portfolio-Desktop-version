@@ -27,7 +27,6 @@ navbarItems.forEach((navbarItems) => {
 });
 
 // Popup desktop project window
-const width = window.innerWidth;
 const projectWindows = [
   {
     title: 'Keeping track of hundreds  of components website',
@@ -127,7 +126,6 @@ if (projectCardsContainer) {
   }
 }
 
-
 // Popup project window
 const openButton = document.querySelectorAll('.project-open-button');
 function popupProjectWindow() {
@@ -223,3 +221,21 @@ submit.addEventListener('click', (event) => {
     errorDiv.innerHTML = 'E-mail address must contain only lower cases <i class="fa-solid fa-circle-exclamation"></i>';
   }
 });
+
+// Local storage
+const fullName = document.getElementById('name');
+const textArea = document.getElementById('textA');
+const datas = [fullName, textArea, email];
+
+function saveValuesObj() {
+  const obj = {};
+  datas.forEach((data) => {
+    obj[data.id] = data.value;
+  });
+  localStorage.setItem('data', JSON.stringify(obj));
+}
+
+fullName.onchange = saveValuesObj;
+textArea.onchange = saveValuesObj;
+email.onchange = saveValuesObj;
+
