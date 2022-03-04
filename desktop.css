@@ -216,7 +216,7 @@ section ul li {
   padding: 3rem;
   z-index: 10;
   overflow: hidden;
-  height: fit-content;
+  height: auto;
   position: fixed;
   background: #fff;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -332,7 +332,6 @@ section ul li {
 }
 
 .card {
-  background-image: url(images/workbg.png);
   background-repeat: no-repeat;
   padding: 50% 16px 16px 16px;
   background-position: center;
@@ -341,7 +340,6 @@ section ul li {
 
 .card1 {
   display: flex;
-  background-image: url(images/placeholder.png);
   align-items: flex-end;
   padding-bottom: 0;
   padding-left: 0;
