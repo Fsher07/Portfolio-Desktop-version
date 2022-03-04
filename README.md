@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: Desktop Version
+# Furkan Salim Hıdır's Personal Portfolio
 
-> Creating a portfolio website.
+> This is my personal portfolio and it includes my projects.
 
 ## Built With
 
@@ -10,9 +10,9 @@
 - CSS
 - JavaScript
 
-## Live Demo (if available)
+## Live Demo
 
-[Portfolio](https://fsher07.github.io/)
+[Personal Portfolio Website Link](https://Fsher07.github.io/)
 
 ## Authors
 
@@ -27,4 +27,4 @@
 Give a ⭐️ if you like this project!
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is public source.
