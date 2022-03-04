@@ -18,6 +18,10 @@ ul {
   list-style: none;
 }
 
+.blue {
+  color: #091e42;
+}
+
 p {
   color: #fff;
   font-family: 'Inter', sans-serif;
@@ -203,6 +207,96 @@ h1 {
   flex-direction: column;
 }
 
+/* Popup project window */
+.popup-window {
+  margin: 7% 3% auto 3%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5px;
+  z-index: 10;
+  position: fixed;
+  background: #fff;
+  height: min-content;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+#technologies-List {
+  height: min-content;
+  gap: 10px;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+}
+
+.popup-window-header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 3px;
+}
+
+.popup-title {
+  text-align: left;
+  margin: 0;
+  width: 90%;
+  font-weight: bold;
+}
+
+.popup-button {
+  font-size: 15px;
+  margin-top: 0;
+  padding: 6px;
+}
+
+.popup-window-closeMark {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.fa-xmark {
+  font-size: 1em;
+}
+
+.popup-window ul {
+  margin-bottom: 5px;
+}
+
+.popup-window-content {
+  gap: 3rem;
+}
+
+.popup-window-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popup-window-text p {
+  font-size: 13px;
+}
+
+.popup-window-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+/* Project Cards */
+
 .works-title {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -294,6 +388,7 @@ h1 {
   font-size: 32px;
   line-height: 44px;
   color: #fff;
+  text-align: left;
 }
 
 .project-ul-1,
@@ -465,6 +560,10 @@ h1 {
   gap: 15px;
   justify-content: center;
   align-items: center;
+}
+
+.popup-tabs {
+  font-size: 14px;
 }
 
 #closeIcon {

@@ -35,6 +35,10 @@ p {
   color: #fff;
 }
 
+.blue {
+  color: #091e42;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -80,6 +84,14 @@ p {
   flex-shrink: 0.5;
 }
 
+.name {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+}
+
 .fa-envelope:hover {
   animation: spin 2s;
 }
@@ -102,6 +114,11 @@ p {
 .cursor {
   margin-right: 40px;
   cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 #headline-img {
@@ -188,11 +205,82 @@ section ul li {
   padding-right: 8%;
 }
 
+/* Popup project window */
+.popup-window {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  max-width: 80%;
+  width: 1200px;
+  padding: 3rem;
+  z-index: 10;
+  overflow: hidden;
+  height: auto;
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.fa-xmark {
+  font-size: 2em;
+}
+
+.popup-window-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-window-header h2 {
+  justify-content: flex-start;
+}
+
+.popup-window ul {
+  margin-bottom: 5%;
+}
+
+.popup-window-content {
+  display: flex;
+  gap: 3rem;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+}
+
+.popup-window-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popup-window-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.popup-window-text p {
+  line-height: 30px;
+  margin-top: 0;
+}
+
+#overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+/* Project Cards */
 .works-title {
   font-family: 'Crete Round', sans-serif;
   font-size: 40px;
   line-height: 52px;
-  color: #091e42;
   margin-right: 30px;
 }
 
@@ -212,7 +300,6 @@ section ul li {
 }
 
 .works-text {
-  color: #091e42;
   font-size: 20px;
   line-height: 28px;
 }
@@ -227,7 +314,6 @@ section ul li {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #091e42;
   border: 1px solid #8993a4;
   padding: 5px;
   margin-right: 15px;
@@ -246,7 +332,6 @@ section ul li {
 }
 
 .card {
-  background-image: url(images/workbg.png);
   background-repeat: no-repeat;
   padding: 50% 16px 16px 16px;
   background-position: center;
@@ -255,7 +340,6 @@ section ul li {
 
 .card1 {
   display: flex;
-  background-image: url(images/placeholder.png);
   align-items: flex-end;
   padding-bottom: 0;
   padding-left: 0;
