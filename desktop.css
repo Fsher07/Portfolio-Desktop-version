@@ -339,6 +339,7 @@ section ul li {
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+  background-image: url('images/placeholder.png');
 }
 
 .projectbtn {

@@ -89,10 +89,10 @@ const projectWindows = [
 
 // project card 1 is created seperately because it is different from the other 5 cards
 function projectCard1() {
-  return `<div class="card card1 ProjectPage" style="background-image: url('${projectWindows[1].image}');">
-  <h3 class="project-titles ProjectPage-h2 ${width > 992 ? projectWindows[1].displayNoneDesktop : projectWindows[1].displayOnMobile}">${projectWindows[1].title}</h3>
-  <p class=" ${width > 992 ? projectWindows[1].displayNoneDesktop : projectWindows[1].displayOnMobile}">${projectWindows[1].description}</p>
-  <ul class="project-ul ${width > 992 ? projectWindows[1].displayNoneDesktop : projectWindows[1].displayOnMobile}">
+  return `<div class="card card1 ProjectPage">
+  <h3 class="project-titles ProjectPage-h2 none-btn">${projectWindows[1].title}</h3>
+  <p class="none-btn">${projectWindows[1].description}</p>
+  <ul class="project-ul none-btn">
     <li><a class="Tags" href="#">${projectWindows[1].technologies.split(' ')[0]}</a></li>
     <li><a class="Tags" href="#">${projectWindows[1].technologies.split(' ')[1]}</a></li>
     <li><a class="Tags" href="#">${projectWindows[1].technologies.split(' ')[2]}</a></li>
