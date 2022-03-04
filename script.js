@@ -1,5 +1,7 @@
 // Popup mobile navbar menu
 
+// Popup mobile navbar menu
+
 const menu = document.querySelector('.desktop-nav');
 const navbarItems = document.querySelectorAll('.navbarItem'); // Get all the navbar items
 const hamburgerMenu = document.querySelector('#hamburgerMenu');
@@ -125,6 +127,8 @@ if (projectCardsContainer) {
   }
 }
 
+
+// Popup project window
 const openButton = document.querySelectorAll('.project-open-button');
 function popupProjectWindow() {
   // creating overlay
