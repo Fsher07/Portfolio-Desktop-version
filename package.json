@@ -1,5 +1,5 @@
 {
-  "name": "Portfolio-Desktop-version",
+  "name": "portfolio-desktop-version",
   "version": "1.0.0",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
@@ -21,7 +21,9 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-eslint": "^7.0.0",
     "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-testing-library": "^5.0.6",
     "hint": "^6.1.9",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
