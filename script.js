@@ -209,6 +209,12 @@ submit.addEventListener('click', (event) => {
   }
 });
 
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('ProjectPage')) {
+    window.location.href = 'https://gorgeous-piroshki-a86cd5.netlify.app/';
+  }
+});
+
 // Local storage
 const fullName = document.getElementById('name');
 const textArea = document.getElementById('textA');
