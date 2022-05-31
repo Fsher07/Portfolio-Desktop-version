@@ -39,17 +39,6 @@ const projectWindows = [
   {
     title: 'Data Dashboard Healthcare',
     technologies: 'Bootstrap html Google',
-    image: 'images/placeholder.png',
-    imageMobile: 'images/workbg.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industrys standard',
-    liveLink: '#',
-    sourceLink: '#',
-    displayNoneDesktop: 'none-btn',
-    displayOnMobile: '',
-  },
-  {
-    title: 'Data Dashboard Healthcare',
-    technologies: 'Bootstrap html Google',
     image: 'images/card2.png',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industrys standard',
     liveLink: '#',
@@ -64,10 +53,10 @@ const projectWindows = [
     sourceLink: '#',
   },
   {
-    title: 'Data Dashboard Healthcare',
-    technologies: 'Bootstrap html Google',
-    image: 'images/workbg.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industrys standard',
+    title: 'Restaurant Reviews',
+    technologies: 'HTML CSS JavaScript',
+    image: 'images/restaurantwebsite.png',
+    description: 'This website is built based on an external API. It consists of various meals and their short informations. You can see meals on homepage. Besides, you can click on comments button to see brief intro and comments about the meal. Also on that popup window, you can add new comment by clicking comment button.',
     liveLink: '#',
     sourceLink: '#',
   },
@@ -104,7 +93,7 @@ function projectCard1() {
 
 // other project cards
 function projectCardContent(info) {
-  return `<div class="card ProjectPage" style="background-image: url('${info.image}');">
+  return `<div class="card ProjectPage" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 70%), url('${info.image}');">
   <h3 class="project-titles ProjectPage-h2">${info.title}</h3>
   <p>${info.description}</p>
   <ul class="project-ul">
@@ -119,7 +108,7 @@ function projectCardContent(info) {
 const projectCardsContainer = document.querySelector('.works-projects');
 if (projectCardsContainer) {
   projectCardsContainer.innerHTML += projectCard1();
-  for (let i = 2; i < projectWindows.length; i += 1) {
+  for (let i = 1; i < projectWindows.length; i += 1) {
     projectCardsContainer.innerHTML += projectCardContent(projectWindows[i]);
   }
 }
