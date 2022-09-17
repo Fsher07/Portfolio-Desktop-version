@@ -48,12 +48,12 @@ const projectWindows = [
   },
   {
     title: 'Space Travelers Hub',
-    technologies: 'React Redux',
-    image: 'images/snip.png',
+    technologies: 'React Redux Router',
+    image: 'images/snip.JPG',
     description: 'This website is for a company that provides commercial and scientific space travel services. The website allow users to book rockets and join selected space missions.',
     liveLink: 'https://delightful-granita-29f9c1.netlify.app',
     sourceLink: 'https://github.com/Fsher07/Space-Travelers-Hub',
-    id: 3,
+    id: 'space',
   },
   {
     title: 'Restaurant Reviews',
@@ -224,6 +224,10 @@ submit.addEventListener('click', (event) => {
 if ($('#restaurant')) {
   $('#restaurant').click(() => {
     window.location.href = 'https://gorgeous-piroshki-a86cd5.netlify.app/';
+  });
+} else if ($('#space')) {
+  $('#space').click(() => {
+    window.location.href = 'https://delightful-granita-29f9c1.netlify.app/';
   });
 }
 
