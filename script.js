@@ -35,6 +35,7 @@ const projectWindows = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     liveLink: '#',
     sourceLink: '#',
+    id: 1,
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -43,14 +44,16 @@ const projectWindows = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industrys standard',
     liveLink: '#',
     sourceLink: '#',
+    id: 2,
   },
   {
-    title: 'Data Dashboard Healthcare',
-    technologies: 'Bootstrap html Google',
-    image: 'images/card3.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industrys standard',
-    liveLink: '#',
-    sourceLink: '#',
+    title: 'Space Travelers Hub',
+    technologies: 'React Redux',
+    image: 'images/snip.png',
+    description: 'This website is for a company that provides commercial and scientific space travel services. The website allow users to book rockets and join selected space missions.',
+    liveLink: 'https://delightful-granita-29f9c1.netlify.app',
+    sourceLink: 'https://github.com/Fsher07/Space-Travelers-Hub',
+    id: 3,
   },
   {
     title: 'Restaurant Reviews',
@@ -59,6 +62,7 @@ const projectWindows = [
     description: 'This website is built based on an external API. It consists of various meals and their short informations. You can see meals on homepage. Besides, you can click on comments button to see brief intro and comments about the meal. Also on that popup window, you can add new comment by clicking comment button.',
     liveLink: '#',
     sourceLink: '#',
+    id: 'restaurant',
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -67,6 +71,7 @@ const projectWindows = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industrys standard',
     liveLink: '#',
     sourceLink: '#',
+    id: 4,
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -75,6 +80,7 @@ const projectWindows = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industrys standard',
     liveLink: '#',
     sourceLink: '#',
+    id: 5,
   }];
 
 // project card 1 is created seperately because it is different from the other 5 cards
@@ -93,7 +99,7 @@ function projectCard1() {
 
 // other project cards
 function projectCardContent(info) {
-  return `<div class="card ProjectPage" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 70%), url('${info.image}');">
+  return `<div class="card ProjectPage" id=${info.id} style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 70%), url('${info.image}');">
   <h3 class="project-titles ProjectPage-h2">${info.title}</h3>
   <p>${info.description}</p>
   <ul class="project-ul">
@@ -209,11 +215,17 @@ submit.addEventListener('click', (event) => {
   }
 });
 
-document.addEventListener('click', (e) => {
-  if (e.target.classList.contains('ProjectPage')) {
+// document.addEventListener('click', (e) => {
+//   if (e.target.classList.contains('ProjectPage')) {
+//     window.location.href = 'https://gorgeous-piroshki-a86cd5.netlify.app/';
+//   }
+// });
+
+if ($('#restaurant')) {
+  $('#restaurant').click(() => {
     window.location.href = 'https://gorgeous-piroshki-a86cd5.netlify.app/';
-  }
-});
+  });
+}
 
 // Local storage
 const fullName = document.getElementById('name');
